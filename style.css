@@ -1,0 +1,181 @@
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header {
+    background-color: #e2e5e8;
+    background-image: linear-gradient(98deg, #0093e9 0%,#8080C7);
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.circular-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-left: 5px; 
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 10px; 
+}
+
+.login-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 250px;
+}
+
+.login-button:hover {
+    background-color: #ff3300; 
+}
+
+.header-right {
+    margin-right: -50px; 
+}
+
+
+nav ul {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li {
+    flex: 1;
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 10px;
+}
+.header-right{
+    margin-left: 800px ;
+    margin-bottom: -20px;
+
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #618798;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    margin: 5px 0;
+}
+
+.dropdown li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    color: #ff6600;
+}
+
+
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.product-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-box:hover {
+    background-color:#8080C7;
+    transform: scale(1.05); 
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-name {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #555;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.login-button {
+    animation: buttonBounce 1s infinite alternate;
+}
+
+@keyframes buttonBounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
